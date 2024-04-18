@@ -1,0 +1,37 @@
+- defaults:
+      link:
+          relink: true
+          force: true
+
+- clean: ["~"]
+
+- link:
+      ~/.bashrc: bashrc
+      ~/.zshrc: zshrc
+      ~/.config/hypr:
+          path: hypr
+          relink: true
+      ~/.config/nvim:
+          path: nvim
+          relink: true
+      ~/.config/nwg-look:
+          path: nwg-look
+          relink: true
+      ~/.config/waybar:
+          path: waybar
+          relink: true
+      ~/.config/rofi:
+          path: rofi
+          relink: true
+      ~/.config/swaylock:
+          path: swaylock
+          relink: true
+      ~/.config/swaync:
+          path: swaync
+          relink: true
+      ~/.config/waypaper-engine:
+          path: waypaper-engine
+          relink: true
+
+- shell:
+      - [git submodule update --init --recursive, Installing submodules]
