@@ -94,11 +94,11 @@ entry {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     3;
+    columns:                     5;
     lines:                       10;
-    cycle:                       true;
-    dynamic:                     true;
-    scrollbar:                   false;
+    cycle:                       false;
+    dynamic:                     false;
+    scrollbar:                   true;
     layout:                      vertical;
     reverse:                     false;
     fixed-height:                true;
