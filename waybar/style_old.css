@@ -1,0 +1,218 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	min-height: 0;
+}
+
+/* Bar styling */
+window#waybar {
+	background: transparent;
+	color: black;
+}
+
+/* Tooltip styling */
+tooltip {
+	background: rgba(43, 48, 59, 0.5);
+	border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+	color: white;
+}
+
+/* Clock styling */
+#clock {
+	background-color: #4b4b4b;
+	color: white;
+	border-radius: 10px;
+	padding: 0 10px;
+}
+
+/* Workspaces styling */
+#workspaces {
+	background-color: #4b4b4b;
+	padding: 5px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+#workspaces button {
+	color: rgb(158, 164, 230);
+	padding: 5px 15px 5px 10px;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	margin: 0 5px 0 0;
+}
+#workspaces button.active {
+	color: rgb(44, 218, 0);
+}
+
+/* Taskbar styling */
+#taskbar {
+	background-color: #4b4b4b;
+	padding: 5px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+#taskbar.empty {
+	background-color: transparent;
+	margin: 0;
+	color: transparent;
+	border: transparent;
+}
+
+/* Network styling */
+#network {
+	background-color: #4b4b4b;
+	padding: 5px 15px 8px 5px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Audio styling */
+#pulseaudio {
+	background-color: #4b4b4b;
+	padding: 0 15px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Tray styling */
+#tray {
+	background-color: #4b4b4b;
+	padding: 0 15px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+#tray menu {
+	background-color: #4b4b4b;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid rgb(79, 81, 104);
+}
+#tray > .passive {
+	color: rgb(158, 164, 230);
+}
+
+/* Notification styling */
+#custom-notification {
+	background-color: #4b4b4b;
+	color: white;
+	border-radius: 10px;
+	padding: 5px 13px 5px 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Utility styling */
+#cpu {
+	background-color: #4b4b4b;
+	padding: 0 15px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+#memory {
+	background-color: #4b4b4b;
+	padding: 0 15px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+#disk {
+	background-color: #4b4b4b;
+	padding: 0 15px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Weather styling */
+#custom-weather {
+	background-color: #4b4b4b;
+	color: white;
+	border-radius: 10px;
+	padding: 10px 8px 5px 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Systemd Failed Units styling */
+#systemd-failed-units {
+	background-color: #4b4b4b;
+	color: rgb(0, 255, 0);
+	border-radius: 10px;
+	padding: 5px 8px 5px 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+#systemd-failed-units.degraded {
+	background-color: #4b4b4b;
+	color: rgb(255, 0, 0);
+	border-radius: 10px;
+	padding: 5px 8px 5px 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Cava styling */
+#cava {
+	background-color: transparent;
+	color: rgb(127, 83, 144);
+	margin-bottom: -30px;
+	font-size: 30px;
+}
+
+/* Bluetooh styling */
+#bluetooth {
+	background-color: #4b4b4b;
+	padding: 0 15px;
+	color: white;
+	border-radius: 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Powermenu styling */
+#custom-power {
+	background-color: #4b4b4b;
+	color: white;
+	border-radius: 10px;
+	padding: 5px 14px 5px 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Wlsunset styling */
+#custom-wlsunset {
+	background-color: #4b4b4b;
+	color: white;
+	border-radius: 10px;
+	padding: 5px 13px 5px 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}
+
+/* Custom Floating */
+#custom-floating {
+	background-color: #4b4b4b;
+	color: white;
+	border-radius: 10px;
+	padding: 5px 19px 5px 10px;
+	margin: 0;
+	border: 2px solid rgb(79, 81, 104);
+}

@@ -1,7 +1,7 @@
 {
 	"layer": "top",
 	"output": "DP-1",
-	"spacing": 5,
+	"spacing": 20,
 	"margin-top": 5,
 	"margin-bottom": 8,
 	"margin-left": 5,
@@ -16,16 +16,15 @@
 		"disk",
 		"cava"
 	],
-	"modules-center": ["wlr/taskbar", "custom/weather"],
+	"modules-center": ["clock"],
 	"modules-right": [
+		"custom/weather",
 		"systemd-failed-units",
 		"custom/floating",
 		"custom/wlsunset",
-		"network",
 		"pulseaudio",
 		"tray",
-		"custom/notification",
-		"clock"
+		"custom/notification"
 	],
 	"systemd-failed-units": {
 		"hide-on-ok": true, // Do not hide if there is zero failed units.
@@ -45,18 +44,6 @@
 		"format-icons": ["", ""], // "" for day and "" for night
 		"tooltip": true,
 		"tooltip-format": "Sunrise: {sunrise}\nSunset: {sunset}"
-	},
-	"network": {
-		"interface": "wlp5s0",
-		"format": "{ifname}",
-		"format-wifi": "({signalStrength}%) ",
-		"format-ethernet": "{ipaddr}/{cidr} 󰊗",
-		"format-disconnected": "", //An empty format will hide the module.
-		"tooltip-format": "{ifname} via {gwaddr} 󰊗",
-		"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-		"tooltip-format-ethernet": "{ifname} ",
-		"tooltip-format-disconnected": "Disconnected",
-		"max-length": 50
 	},
 	"pulseaudio": {
 		"format": "{volume}% {icon}",
@@ -102,13 +89,13 @@
 	},
 	"clock": {
 		"timezone": "America/Chicago",
-		"format": "{:%OI:%M%p}  ",
+		"format": "{:%OI:%M%p}  ",
 		"format-alt": "{:%A, %B %d, %Y (%R)}  ",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {
-			"mode": "year",
-			"mode-mon-col": 3,
-			"weeks-pos": "right",
+			"mode": "month",
+			"mode-mon-col": 1,
+			"weeks-pos": "left",
 			"on-scroll": 1,
 			"format": {
 				"months": "<span color='#ffead3'><b>{}</b></span>",
@@ -139,9 +126,7 @@
 			"3": "󰨞",
 			"4": "󰇯",
 			"5": "",
-			"6": "󰹛",
-			"active": "",
-			"default": ""
+			"6": "󰹛"
 		},
 		"persistent-workspaces": {
 			"*": [1, 3, 4, 5, 6]
@@ -155,12 +140,8 @@
 		"on-click": "activate",
 		"on-click-middle": "close",
 		"all-outputs": true,
-		"app_ids-mapping": {
-			"firefoxdeveloperedition": "firefox-developer-edition"
-		},
 		"rewrite": {
 			"Firefox Web Browser": "Firefox",
-			"Foot Server": "Terminal",
 			"Picture-in-Picture": "PiP"
 		}
 	},
@@ -173,8 +154,8 @@
 	},
 	"cpu": {
 		"interval": 10,
-		"format": "{icon0} {icon1} {icon2} {icon3} {icon4} {icon5} {icon6} {icon7}",
-		"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+		"format": "{}% ",
+		"max-length": 10
 	},
 	"memory": {
 		"interval": 10,
@@ -184,27 +165,5 @@
 		"interval": 30,
 		"format": "{percentage_free}% ",
 		"path": "/"
-	},
-	"cava": {
-		//        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
-		"framerate": 164,
-		"autosens": 1,
-		"sensitivity": 1,
-		"bars": 10,
-		"lower_cutoff_freq": 50,
-		"higher_cutoff_freq": 10000,
-		"method": "pipewire",
-		"source": "auto",
-		"stereo": true,
-		"reverse": false,
-		"bar_delimiter": 0,
-		"monstercat": true,
-		"waves": false,
-		"noise_reduction": 0.9,
-		"input_delay": 2,
-		"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-		"actions": {
-			"on-click-right": "mode"
-		}
 	}
 }
